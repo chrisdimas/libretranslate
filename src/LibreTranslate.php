@@ -11,28 +11,28 @@ namespace Jefs42;
 class LibreTranslate
 {
     /** @var string The API Key to be used for requests */
-    private $apiKey = '';
+    protected $apiKey = '';
 
     /** @var string The API base URL */
-    private $apiBase = 'http://localhost';
+    protected $apiBase = 'http://localhost';
 
     /** @var int The port at apiBase to use   */
-    private $apiPort = null;
+    protected $apiPort = null;
 
     /** @var string Local path to ltmanage, if available */
-    private $LTManage = null;
+    protected $LTManage = null;
 
     /** @var boolean If the `ltmanage` binary is available on the server or not */
     public $canManage = false;
 
-    private $sourceLanguage = 'en';
+    protected $sourceLanguage = 'en';
 
-    private $targetLanguage = 'es';
+    protected $targetLanguage = 'es';
 
-    private $lastError = '';
+    protected $lastError = '';
 
-    private $Settings = [];
-    private $Languages = [];
+    protected $Settings = [];
+    protected $Languages = [];
 
 
 
